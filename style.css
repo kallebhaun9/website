@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Medula+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Diplomata+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karma&display=swap');
+
+/* fonts */
+img {
+  width: 100%;
+  max-width: 10em;
+  max-height: inherit;
+}
+
+h1 {
+  font-family: 'Diplomata SC';
+  font-size: 75px;
+  color: #3A5A3B;
+}
+h2 {
+    font-family: 'Montserrat Subrayada';
+    font-size: 60px;
+    color:#8A745C;
+  }
+  h3 {
+  font-family: 'Medula One';
+  font-size: 50px;
+  color:#6ea171;
+}
+body {
+  font-family: 'Karma';
+  font-size: 30px;
+  color:#e1d798;
+  background-color:#424756;
+}
+
+/*decor */
+#q li {
+  font-size: 20px;
+  list-style-type: none;
+}
+.menu {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#q li {
+  float: left;
+}
+#q li a {
+  display: block;
+  color: #e2eef3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#q li a:hover:not(.active) {
+  background-color: #002d4a;
+}
+#q .active {
+  background-color: #b40000;
+}
+ .header ul {
+  list-style-type: none;
+  padding: 0;
+  width: 200px;
+  background-color: #424756;
+  border: 1px solid white;
+}
+
+.header li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ .header li {
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+ .header li:last-child {
+  border-bottom: none;
+}
+li a.active2 {
+  background-color: gray;
+  color: white;
+}
+
+li a:hover:not(.active2) {
+  background-color: #555;
+  color: white;
+}
+body {
+  background-image: url(bg.jpg);
+  background-size: contain, cover;
+  background-repeat: repeat-y;
+}
+ p {
+  background-color: #625541;
+  border: 10px solid black;
+  border-bottom: 10px solid gray;
+   border-right: 10px solid gray;
+  text-align: left;
+}
+h2 {
+  border: 10px solid black;
+  border-bottom: 10px solid white;
+  text-align: center;
+  background-color: #080808;
+  padding: 10px;
+
+}
+h3 {
+  border: 10px solid black;
+  border-bottom: solid gray;
+  text-align: center;
+  background-color: #080808;
+  padding: 5px;
+
+}
+.cite {
+ border: 3px solid white;
+ width: auto;
+ border-bottom: solid gray;
+ text-align: center;
+ background-color: black;
+ padding: 5px;
+
+
+}
+footer {
+ background-color: rgba(98,86,75,.5);
+ text-align: left;
+
+
+}
+.cite2 {
+ border: 3px solid white;
+ width: auto;
+ border-bottom: solid gray;
+ text-align: center;
+ background-color: black;
+
+}
+.creed {
+  background-color: rgba(98,86,75,.5);
+  border: 10px solid black;
+  border-bottom: 10px solid gray;
+   border-right: 10px solid gray;
+  text-align: center;
+
+  padding: 0px;
+
+
+}
+.wow {
+  display: none;
+}
+
+.h:hover .wow {
+  display: block;
+}
+/* grid page 1 */
+.container-i {
+  display: grid;
+  width: 100vw;
+  height: 1000vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:200px 300px 1000px 6fr 300px 200px;
+  grid-template-areas:
+  "nav nav nav"
+  "abt abt abt"
+  "s1 s1 a1"
+  "h1 h1 h1"
+  "cites cites ."
+  "footer . .";
+}
+
+.navi {
+  grid-area: nav;
+}
+.sectionabout {
+  grid-area: abt;
+}
+.indexsection1 {
+  grid-area: s1;
+}
+.indexaside1 {
+  grid-area: a1;
+}
+.main {
+  grid-area: h1;
+  display: grid;
+  width: 100vw;
+  height: 500vh;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 5fr;
+  grid-template-areas:
+  ". h1 ."
+  ". a ."
+  "b b c"
+  ". d ."
+  "e e f"
+  ". g ."
+  "h h i"
+  ". j ."
+  "k k l"
+  ". m ."
+  "n n o";
+  justify-content: space-around;
+  align-items: stretch;
+}
+.main{
+  grid-area:h1;
+}
+.a {
+  grid-area:a;
+}
+.b {
+  grid-area:b;
+}
+.c {
+  grid-area:c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+}
+.g {
+  grid-area: g;
+}
+.h {
+  grid-area: h;
+}
+.i {
+  grid-area: i;
+}
+.j {
+  grid-area: j;
+}
+.k {
+  grid-area: k;
+}
+.l {
+  grid-area: l;
+}
+.m {
+  grid-area: m;
+}
+.n {
+  grid-area: n;
+}
+.o {
+  grid-area: o;
+}
+.cites {
+  grid-area: cites;
+}
+.footer {
+  grid-area: footer;
+}
+/* grid page 2 */
+.container2 {
+  display: grid;
+  width: 100vw;
+  height: 200vh;
+  grid-template-columns: 1fr ;
+  grid-template-rows:200px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "nav"
+  "main"
+  "article"
+  "section"
+  "cite"
+  "footer";
+}
+.nav2 {
+  grid-area: nav;
+}
+.main2 {
+  grid-area: main;
+}
+.article2 {
+  grid-area: article;
+}
+.section2 {
+  grid-area: section;
+}
+.cite {
+  grid-area: cite;
+}
+footer {
+  grid-area: footer;
+}
+/* page 3 grid */
+.container3 {
+  display: grid;
+  width: 100vw;
+  height: 1300vh;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows:200px 1fr 25fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "nav nav nav"
+  "main main main"
+  "art art art"
+  ". . ."
+  "aside aside ."
+  "footer . .";
+}
+
+.nav3 {
+  grid-area: nav;
+}
+.main3 {
+  grid-area: main;
+}
+
+.art3 {
+  grid-area: art;
+  display: grid;
+  width: 100vw;
+  height: 500vh;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 25fr;
+  grid-template-areas:
+  "a a a"
+  ". b ."
+  "c c c"
+  "d d d"
+  ". e ."
+  "f f f"
+  "g g g"
+  ". h ."
+  "i i i"
+  "j j j"
+  ". k ."
+  "l l l"
+  ". m ."
+  "n n n"
+  "o o o"
+  ". p ."
+  "q q q"
+  "r r r"
+  ". s ."
+  "t t t"
+  ". u ."
+  "v v v"
+  "w w w"
+  " x "
+  "y y y";
+}
+.a {
+  grid-area:a;
+}
+.b {
+  grid-area:b;
+}
+.c {
+  grid-area:c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+}
+.g {
+  grid-area: g;
+}
+.h {
+  grid-area: h;
+}
+.i {
+  grid-area: i;
+}
+.j {
+  grid-area: j;
+}
+.k {
+  grid-area: k;
+}
+.l {
+  grid-area: l;
+}
+.m {
+  grid-area: m;
+}
+.n {
+  grid-area: n;
+}
+.o {
+  grid-area: o;
+}
+.p {
+  grid-area: p;
+}
+.q {
+  grid-area: q;
+}
+.r {
+  grid-area: r;
+}
+.s {
+  grid-area: s;
+}
+.t {
+  grid-area: t;
+}
+.u {
+  grid-area: u;
+}
+.v {
+  grid-area: v;
+}
+.w {
+  grid-area: w;
+}
+.x {
+  grid-area: x;
+}
+.y {
+  grid-area: y;
+}
+.aside3 {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
+/* page 4 grid */
+.container4 {
+  display: grid;
+  width: 100vw;
+  height: 400vh;
+  grid-template-columns: 1fr ;
+  grid-template-rows:200px 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "nav"
+  "main"
+  "article"
+  "section"
+  "sec"
+  "cite"
+  "footer";
+}
+.nav4 {
+  grid-area: nav;
+}
+.main4 {
+  grid-area: main;
+}
+.art4 {
+  grid-area: article;
+}
+.sec4 {
+  grid-area: section;
+}
+.secv {
+  grid-area: sec;
+}
+.cite4 {
+  grid-area: cite;
+}
+footer {
+  grid-area: footer;
+}
